@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: netflix-app
-        image: joindevops006/joindevops:0.1.1
+        image: joindevops006/joindevops:netflix
         ports:
         - containerPort: 80

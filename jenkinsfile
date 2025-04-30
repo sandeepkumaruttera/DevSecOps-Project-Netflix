@@ -39,7 +39,7 @@ pipeline {
                 """
             }
         }        
-        stage('Docker build'){
+        /*stage('Docker build'){
             steps{
                 sh """
                     echo "Chintu@123" | docker login -u joindevops006 --password-stdin
@@ -49,7 +49,7 @@ pipeline {
                     docker push  joindevops006/joindevops:${appVersion}
                 """
             }
-        }
+        } */
         stage('Deploy to kubernets'){
             steps{
                 script{
